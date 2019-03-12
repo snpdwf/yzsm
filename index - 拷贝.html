@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width,initial-scale=1.0">
+    <title>恒山黄芪</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/user.css" type="text/css">
+
+
+  </head>
+  <body>
+    <div class="container-fluid header">
+    	<div class="row">
+    		<div class="col-xs-2 text-right">
+    			<img src="./img/logo.png" alt="">
+    		</div>
+    		<div class="col-xs-8 ">
+    			<p>大同市毅珍商贸有限公司</p>
+    		</div>
+    		<div class="col-xs-2">
+    			<button class="btn btn-default" type="button">进店</button>
+    		</div>
+    	</div>
+    </div>
+    <div class="container-fluid video" id="video" >
+		<video  width="100%"  controls poster="./img/first.jpg">
+			<source src="./video/huangqi.mp4" type="video/mp4">
+		</video>
+    </div>
+ 	<div class="container-fluid pic">
+ 		<img src="./img1/pic1.jpg" alt="">
+ 		<img src="./img1/pic2.jpg" alt="">
+ 		<img src="./img1/pic3.jpg" alt="">
+ 		<img src="./img1/pic4.jpg" alt="">
+ 		<img src="./img1/pic5.jpg" alt="">
+ 		<img src="./img1/pic6.jpg" alt="">
+ 		<img src="./img1/pic7.jpg" alt="">
+ 		<img src="./img1/pic8.jpg" alt="">
+ 		<img src="./img1/pic9.jpg" alt="">
+
+ 	</div>
+ 	<div class="container-fluid">
+ 		<div class="row footer">  <!--最下面的转到微信代码-->
+			<div class="col-xs-12">
+				<img src="./imgx/wechat.png" alt="">
+				<p>购买微信：</p><div id="textblod"></div>
+				<input type="button" onClick="copyUrl2()" value="点击复制去微信" class="btn btn-default" />
+			</div>
+
+		</div>
+ 	</div>
+	<div class="container-fluid xingxi">
+
+			<form action="jilu.php" method="post" class="form-horizontal">
+
+				<div class="input-group">
+				  <div class="input-group-addon">姓名：</div>
+				  <input type="text" class="form-control input-sm"  placeholder="输入姓名" name="name">
+				</div>
+				<div class="input-group">
+				  <div class="input-group-addon">电话：</div>
+				  <input type="tel" class="form-control input-sm"  placeholder="输入电话" name="tel">
+				</div>
+				<div class="input-group">
+				  <div class="input-group-addon">地址：</div>
+				  <input type="text" class="form-control input-sm"  placeholder="输入地址" name="addr">
+				</div>
+				<button class="btn btn-primary  btn-block" type="submit">提交信息</button>
+			</form>
+
+	</div>
+
+
+
+		<script>
+			var c=["snpdwf1","snpdwf2","snpdwf3","snpdwf4"];
+			window.onload=function(){
+				/*数据传给DIV*/
+    		document.getElementById("textblod").innerHTML=c[parseInt(Math.random()*c.length)];
+				/*把div中的数据传给文体区域*/
+		document.getElementById("biao1").innerHTML=document.getElementById("textblod").innerHTML;
+			}
+	  	</script>
+	
+	<!--把textarea内容放到剪贴板-->
+	<script type="text/javascript">  
+		function copyUrl2()
+		{
+		var Url2=document.getElementById("biao1");
+		Url2.select(); // 选择对象
+		document.execCommand("Copy"); // 执行浏览器复制命令
+		window.location.href='weixin://';//跳转到微信（这是我后来加入的）   
+		}
+	</script>
+	<textarea cols="8" rows="1" id="biao1" class="sr-only"></textarea>
+	<!--把textarea内容放到剪贴板-->
+   
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
