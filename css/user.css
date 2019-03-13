@@ -18,7 +18,7 @@ h3{
 	line-height: 1.5em;
 	font-weight: bolder;
 	color: #fff;
-	padding: 15px 10px;
+	padding: 10px 10px;
 	background-color: red;
 	box-shadow: 2px 2px 8px #000;
 	margin: 15px auto;
@@ -32,10 +32,9 @@ h4{
 p{
 	font-size: 18px;
 }
-ul{
+li{
 	font-size: 18px;
-/*	font-weight: bold;*/
-/*	color: blue;*/
+
 }
 .szd{
 	font-family:"Lato Black", "Source Sans Pro Black", Oswald;
@@ -164,7 +163,7 @@ ul{
 }
 
 .xingxi .btn {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 
