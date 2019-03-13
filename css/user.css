@@ -6,16 +6,23 @@ body{
 	line-height: 2em;
 	font-family:"微软雅黑",Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 }
+.weixin{
+	position: fixed;
+	top:200px;
+	right: 0px;
+	width: 60px;
+	z-index: 100;
+}
 h3{
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1.5em;
 	font-weight: bolder;
 	color: #fff;
-	width: 320px;
-	padding: 15px 20px;
+	padding: 15px 10px;
 	background-color: red;
 	box-shadow: 2px 2px 8px #000;
 	margin: 15px auto;
+	display: table;
 }
 h4{
 	line-height: 1.5em;
@@ -27,12 +34,12 @@ p{
 }
 ul{
 	font-size: 18px;
-	font-weight: bold;
+/*	font-weight: bold;*/
 /*	color: blue;*/
 }
 .szd{
 	font-family:"Lato Black", "Source Sans Pro Black", Oswald;
-	font-size: 30px;
+	font-size: 18px;
 	color: red;
 }
 .hdhz{
@@ -96,7 +103,7 @@ ul{
 .zj{
 	/*图片下面的注解*/
 	font-size: 13px;
-	font-weight: bold;
+/*	font-weight: bold;*/
 }
 .video{
 	padding: 0px 0px;
