@@ -104,6 +104,12 @@ li{
 	font-size: 13px;
 /*	font-weight: bold;*/
 }
+.dizhi .col-xs-3,
+.dizhi .col-xs-6{
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding: 0 1px;
+}
 .video{
 	padding: 0px 0px;
 }

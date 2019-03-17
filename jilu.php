@@ -15,8 +15,10 @@ if (!$link) {
 }
 $name = $_POST['name'];
 $tel = $_POST['tel'];
-$addr = $_POST['addr'];
-
+$prv = $_POST['province'];
+$city = $_POST['city'];
+$addrh = $_POST['addr'];
+$addr = $prv.$city.$addrh;
 if($name == "" || $tel == "" || $addr == "" )
 {
  echo "<script>alert('信息不能为空！重新填写');window.location.href='index.html'</script>";
