@@ -1,0 +1,23 @@
+vertical-align影响inline-level元素和table-cell元素垂直方向上的布局
+
+
+
+下面是一个图片居中的例子：
+
+1     .img_wrap{
+2     width: 400px;
+3     height: 300px;
+4     border: 1px dashed #ccc;
+5     display: table-cell; //主要是这个属性
+6     vertical-align: middle;
+7     text-align: center;
+8 }
+
+第二种方法：
+
+.img_wrap{
+    width: 400px;
+    height: 300px;
+    border: 1px dashed #ccc;
+    background: url(wgs.jpg) no-repeat center center;
+}

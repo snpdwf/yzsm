@@ -1,0 +1,14 @@
+	<!--把textarea内容放到剪贴板-->
+	<script type="text/javascript">  
+		function copyUrl2()
+		{
+		var Url2=document.getElementById("biao1");
+		Url2.select(); // 选择对象
+		document.execCommand("Copy"); // 执行浏览器复制命令  
+		}
+	</script>
+	<textarea cols="8" rows="1" id="biao1" class="sr-only"></textarea>
+	<!--把textarea内容放到剪贴板-->
+
+
+<input type="button" onClick="copyUrl2()" value="点击复制去微信" class="btn btn-default" />

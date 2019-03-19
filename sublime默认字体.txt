@@ -1,0 +1,7 @@
+默认的是Consolas，英文显示很好看，但是中文就别扭了，建议使用 YaHei Consolas hybrid 字体
+中文是雅黑，英文是consolas。
+
+安装后是：Microsoft YaHei Mono字体
+
+
+下载后文件就在当前目录：“编程字体”

@@ -1,0 +1,7 @@
+    <div class="container-fluid video">
+
+		<video  width="100%"  controls>
+			<source src="./video/huangqi.mp4" type="video/mp4">
+		</video>
+
+    </div>

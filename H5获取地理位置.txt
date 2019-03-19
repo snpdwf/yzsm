@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test"></p>
+</body>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥&callback=init" type="text/javascript"></script>
+<script>
+function getLocation()
+{
+    if (navigator.geolocation)
+    {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    }
+    else
+    {
+        console.log("该浏览器不支持获取地理位置。");
+    }
+}
+
+function showPosition(position)
+{
+    var point = new BMap.Point(position.coords.longitude, position.coords.latitude);
+    var myGeo = new BMap.Geocoder();
+    myGeo.getLocation(point, function (result) {
+		var a = result.addressComponents.province;
+		var b = result.addressComponents.city;
+		var c = a+" "+b;
+		var x = document.getElementById("test");
+		x.innerHTML=c;
+//        alert(result.addressComponents.province + ' ' + result.addressComponents.city);
+    })
+}
+
+function showError(error) {
+    console.log(error);
+}
+getLocation();
+</script>
+</html>
