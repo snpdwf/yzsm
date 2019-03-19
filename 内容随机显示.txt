@@ -1,7 +1,0 @@
-<div id="content"></div>
-<script>
-var c=["随机内容1","随机内容2","随机内容3","随机内容4"];
-window.onload=function(){
-    document.getElementById("content").innerHTML=c[parseInt(Math.random()*c.length)];
-}
-</script>

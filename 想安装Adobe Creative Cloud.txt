@@ -1,3 +1,0 @@
-直接下载的Adobe Creative Cloud安装老是出错，
-
-安装premiere cc2017时会自动安装上，这个是没有问题的。

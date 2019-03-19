@@ -1,5 +1,0 @@
-
-
-
-display: table;      宽度随内容宽而定
-margin: 0 auto;      水平居中

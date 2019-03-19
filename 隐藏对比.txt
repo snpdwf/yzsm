@@ -1,3 +1,0 @@
-visibility: hidden;       看不见，但内容还在
-
-display:none;      内容不在
